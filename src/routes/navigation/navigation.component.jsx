@@ -1,10 +1,10 @@
-import { Fragment } from 'react'
+import { Fragment } from "react";
 
-import { Link, Outlet } from 'react-router-dom'
+import { Link, Outlet } from "react-router-dom";
 
-import { ReactComponent as CrwnLogo } from '../../assets/crown.svg'
+import { ReactComponent as CrwnLogo } from "../../assets/crown.svg";
 
-import './navigation.styles.scss'
+import "./navigation.styles.scss";
 
 const Navigation = () => {
   return (
@@ -17,11 +17,14 @@ const Navigation = () => {
           <Link className="nav-link" to="/shop">
             Shop
           </Link>
+          <Link className="nav-link" to="/auth">
+            SIGN IN
+          </Link>
         </div>
       </div>
       <Outlet />
     </Fragment>
-  )
-}
+  );
+};
 
-export default Navigation
+export default Navigation;
